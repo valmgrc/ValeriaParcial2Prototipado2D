@@ -8,10 +8,14 @@ public class EnemigosController : MonoBehaviour
     static int puntaje = 0;
     public Rigidbody2D cerdito;
 
+    private Controles inputActions;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-
+    private void Awake()
+    {
+        inputActions = new Controles();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "TablonesMadera")
