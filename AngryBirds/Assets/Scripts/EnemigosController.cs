@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class EnemigosController : MonoBehaviour
 {
@@ -16,6 +17,38 @@ public class EnemigosController : MonoBehaviour
     {
         inputActions = new Controles();
     }
+
+    private void OnEnable()
+    {
+        inputActions.PajarosVScerdos.Enable();
+        inputActions.PajarosVScerdos.Presionado.started += LePico; //suscripcion
+    }
+
+    void LePico(InputAction.CallbackContext handler)
+    {
+        if
+           {
+            Debug.Log("Le pico al click izquierdo)");
+        }
+        else
+        {
+            Debug.Log("Ya no le pico al click izquierdo)");
+        }
+    }
+
+    void NoLePico(InputAction.CallbackContext handler)
+    {
+        Debug.Log("Espacio");
+    }
+
+
+
+
+    private void OnDisable()
+    {
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "TablonesMadera")
