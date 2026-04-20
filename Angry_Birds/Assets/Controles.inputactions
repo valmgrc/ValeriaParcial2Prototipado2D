@@ -1,0 +1,74 @@
+{
+    "name": "Controles",
+    "maps": [
+        {
+            "name": "PajarosVScerdos",
+            "id": "54c6306a-920b-4964-8e1a-97255385e4d1",
+            "actions": [
+                {
+                    "name": "Presionado",
+                    "type": "Button",
+                    "id": "3948198f-1eb1-4120-a991-beacb7d4e4f8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Posicion",
+                    "type": "Value",
+                    "id": "01b9e98f-f718-475b-8c80-2c4c1a6bea84",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PotenciaMas",
+                    "type": "Button",
+                    "id": "13ebdae8-1064-45fa-90e1-29d3fdde2a4e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c57d7b8a-806d-4f0f-9219-24632c82bad6",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Presionado",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3081f0cf-0e4a-4c15-a3f9-16dc8811eff5",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Posicion",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "76035007-1bf6-4082-a30b-09c99189bfbf",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PotenciaMas",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
