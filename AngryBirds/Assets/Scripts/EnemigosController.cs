@@ -26,15 +26,11 @@ public class EnemigosController : MonoBehaviour
 
     void LePico(InputAction.CallbackContext handler)
     {
-        if
-           {
-            Debug.Log("Le pico al click izquierdo)");
-        }
-        else
-        {
-            Debug.Log("Ya no le pico al click izquierdo)");
-        }
+            
+        Debug.Log("Le pico al click izquierdo)");
+        
     }
+
 
     void NoLePico(InputAction.CallbackContext handler)
     {
